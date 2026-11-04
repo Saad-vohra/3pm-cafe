@@ -48,7 +48,7 @@ export function TableBookingCard({
     };
 
     const textLines = [
-      "✨ *TABLE RESERVATION REQUEST - SUFI'S CAFE* ✨",
+      "✨ *TABLE RESERVATION REQUEST - 3PM CAFE* ✨",
       "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
       `👤 *Guest Name:* ${name.trim()}`,
       `👥 *Number of Guests:* ${guests} ${guests === "1" ? "Guest" : "Guests"}`,
@@ -70,7 +70,7 @@ export function TableBookingCard({
     window.open(waUrl, "_blank", "noopener,noreferrer");
   };
 
-  const quickChatUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent("Hi Sufi's Cafe! I'd like to ask a question.")}`;
+  const quickChatUrl = `https://wa.me/${cleanPhone}?text=${encodeURIComponent("Hi 3PM Cafe! I'd like to ask a question.")}`;
 
   return (
     <div className="rounded-2xl border border-white/15 bg-black/25 p-4 sm:p-5 backdrop-blur-sm shadow-inner text-paper">

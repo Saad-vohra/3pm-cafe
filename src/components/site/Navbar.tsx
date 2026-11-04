@@ -115,8 +115,8 @@ export function Navbar({
     { id: "contact", label: t.contactUs, path: "/contact" },
   ];
 
-  // Direct Google Maps Directions URL from user's location to Sufi's Cafe
-  const directionsUrl = "https://www.google.com/maps/search/?api=1&query=Sufi%27s+Cafe,+c/o+Dawat+Restaurant,+Ahmedabad-Narol-Kheda+Highway,+Kajipura,+Gujarat+387120";
+  // Direct Google Maps Directions URL from user's location to 3PM Cafe
+  const directionsUrl = "https://www.google.com/maps/search/?api=1&query=3PM+Cafe,+krishna+empire,+201-202,+Road,+Vallabh+Vidyanagar,+Anand,+Gujarat+388120";
 
   return (
     <>
@@ -177,13 +177,13 @@ export function Navbar({
               <div className="flex flex-col items-start gap-4">
                 {/* 4 Circular Outline Buttons: Locate Us / Directions, Instagram, WhatsApp, Call */}
                 <div className="flex items-center gap-3 sm:gap-4">
-                  {/* Locate Us / Directions to Sufi's Cafe */}
+                  {/* Locate Us / Directions to 3PM Cafe */}
                   <a
                     href={directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Locate Us - Get Directions to Sufi's Cafe"
-                    title="Get Directions to Sufi's Cafe"
+                    aria-label="Locate Us - Get Directions to 3PM Cafe"
+                    title="Get Directions to 3PM Cafe"
                     className="size-11 sm:size-12 rounded-full border border-white/30 bg-white/10 hover:bg-white/25 hover:border-white text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                   >
                     <MapPinIcon className="size-5" />
@@ -195,7 +195,7 @@ export function Navbar({
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    title="Follow Sufi's Cafe on Instagram"
+                    title="Follow 3PM Cafe on Instagram"
                     className="size-11 sm:size-12 rounded-full border border-white/30 bg-white/10 hover:bg-white/25 hover:border-white text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                   >
                     <InstagramIcon className="size-5" />
@@ -217,7 +217,7 @@ export function Navbar({
                   <a
                     href="tel:+918320812121"
                     aria-label="Call"
-                    title="Call Sufi's Cafe"
+                    title="Call 3PM Cafe"
                     className="size-11 sm:size-12 rounded-full border border-white/30 bg-white/10 hover:bg-white/25 hover:border-white text-white flex items-center justify-center transition-all hover:scale-105 shadow-xs"
                   >
                     <PhoneCallIcon className="size-5" />
@@ -246,7 +246,7 @@ export function Navbar({
         className="sticky top-0 z-[60] w-full border-b border-[#006241]/15 bg-[#fbf9f5]/95 backdrop-blur-md shadow-xs transition-colors duration-300"
       >
         <div className="w-full px-4 sm:px-8 lg:px-14 py-1.5 sm:py-2.5 lg:py-2 flex items-center justify-between">
-          {/* Left: Brand Logo + SUFI'S (top) + CAFE (small below) */}
+          {/* Left: Brand Logo + 3PM (top) + CAFE (small below) */}
           <button
             type="button"
             onClick={() => handleNav("/")}
@@ -254,7 +254,7 @@ export function Navbar({
           >
             <img
               src="/images/logo.png"
-              alt="Sufi's Cafe Logo"
+              alt="3PM Cafe Logo"
               className="size-11 sm:size-12 lg:size-[50px] rounded-full object-contain ring-2 ring-[#006241]/25 drop-shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0 bg-white p-0.5"
             />
             <div className="h-8 sm:h-9 lg:h-9 w-px bg-[#006241]/25" />
@@ -263,7 +263,7 @@ export function Navbar({
                 className="font-serif tracking-[0.15em] font-bold leading-none text-[#006241]"
                 style={{ fontSize: "clamp(20px, 2.2vw, 25px)" }}
               >
-                SUFI&apos;S
+                3PM
               </span>
               <span className="text-[10px] sm:text-[11px] lg:text-[11px] font-bold uppercase tracking-[0.3em] mt-1 leading-none text-[#006241]/85">
                 CAFE
@@ -304,8 +304,8 @@ export function Navbar({
             {/* Mobile Call Icon Button: White/Cream circle with dark green phone */}
             <a
               href={BRAND.tel}
-              aria-label="Call Sufi's Cafe"
-              title="Call Sufi's Cafe"
+              aria-label="Call 3PM Cafe"
+              title="Call 3PM Cafe"
               className="lg:hidden size-9 rounded-full border border-[#006241]/35 bg-white text-[#006241] hover:bg-[#006241]/10 flex items-center justify-center shadow-xs transition-transform active:scale-95 cursor-pointer"
             >
               <Phone className="size-4 text-[#006241]" />
@@ -314,7 +314,7 @@ export function Navbar({
             {/* Desktop Call Pill Button */}
             <a
               href={BRAND.tel}
-              aria-label="Call Sufi's Cafe"
+              aria-label="Call 3PM Cafe"
               className="hidden lg:inline-flex btn-line !py-1.5 !px-3.5 text-xs sm:text-sm items-center gap-2 !border-[#006241]/35 !text-[#006241] hover:!bg-[#006241]/10 font-bold rounded-full shadow-2xs"
             >
               <Phone className="size-4 text-[#006241]" />
@@ -326,7 +326,7 @@ export function Navbar({
               href={directionsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Locate Us - Directions to Sufi's Cafe"
+              aria-label="Locate Us - Directions to 3PM Cafe"
               className="hidden lg:inline-flex btn-ink !bg-[#006241] !border-[#006241] text-white hover:!bg-[#004f36] shadow-sm items-center gap-2 !py-1.5 !px-4 !rounded-full text-xs sm:text-sm font-bold transition-all hover:scale-105 cursor-pointer"
             >
               <MapPin className="size-4 text-white" />

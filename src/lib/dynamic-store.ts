@@ -20,13 +20,13 @@ export const DEFAULT_CAFE_SETTINGS: CafeSettings = {
   phone: BRAND.phone,
   whatsapp: BRAND.whatsapp,
   instagram: BRAND.instagram,
-  instagramUrl: BRAND.instagramUrl || "https://www.instagram.com/__.sufiscafe?cplk=MW9saTB4NXppZnQzOA==",
+  instagramUrl: BRAND.instagramUrl || "https://www.instagram.com/__.3pmcafe?cplk=MW9saTB4NXppZnQzOA==",
   address: BRAND.locations[0].address,
   hours: BRAND.hours,
-  mapsUrl: BRAND.locations[0].maps || "https://www.google.com/maps/search/?api=1&query=Sufi%27s+Cafe,+c/o+Dawat+Restaurant,+Ahmedabad-Narol-Kheda+Highway,+Kajipura,+Gujarat 387120",
+  mapsUrl: BRAND.locations[0].maps || "https://www.google.com/maps/search/?api=1&query=3PM+Cafe,+krishna+empire,+201-202,+Road,+Vallabh+Vidyanagar,+Anand,+Gujarat+388120",
 };
 
-const SETTINGS_KEY = "sufis_cafe_settings_v1";
+const SETTINGS_KEY = "3pm_cafe_settings_v1";
 
 const isRetiredNumber = (v?: string | null) => !!v && v.replace(/\D/g, "").endsWith("9173331535");
 const withCurrentNumbers = (s: CafeSettings): CafeSettings => ({
@@ -54,7 +54,7 @@ export async function saveLiveCafeSettings(settings: CafeSettings): Promise<{ su
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
-      window.dispatchEvent(new CustomEvent("sufis_settings_updated", { detail: settings }));
+      window.dispatchEvent(new CustomEvent("3pm_settings_updated", { detail: settings }));
     } catch {
       // ignore
     }
@@ -74,8 +74,8 @@ export function useDynamicBrand() {
       }
     };
 
-    window.addEventListener("sufis_settings_updated", onUpdate);
-    return () => window.removeEventListener("sufis_settings_updated", onUpdate);
+    window.addEventListener("3pm_settings_updated", onUpdate);
+    return () => window.removeEventListener("3pm_settings_updated", onUpdate);
   }, []);
 
   return settings;
@@ -108,10 +108,10 @@ export interface CustomMenuItem {
   weight?: number | null;
 }
 
-const MENU_ITEMS_KEY = "sufis_custom_menu_items_v2";
-const DELETED_ITEMS_KEY = "sufis_deleted_menu_items_v2";
-const CATEGORIES_KEY = "sufis_custom_categories_v2";
-const DELETED_CATEGORIES_KEY = "sufis_deleted_categories_v2";
+const MENU_ITEMS_KEY = "3pm_custom_menu_items_v2";
+const DELETED_ITEMS_KEY = "3pm_deleted_menu_items_v2";
+const CATEGORIES_KEY = "3pm_custom_categories_v2";
+const DELETED_CATEGORIES_KEY = "3pm_deleted_categories_v2";
 
 export async function fetchLiveCategories(): Promise<{
   customCategories: CustomCategory[];
@@ -156,7 +156,7 @@ export async function saveLiveCategory(cat: CustomCategory): Promise<boolean> {
         localStorage.setItem(DELETED_CATEGORIES_KEY, JSON.stringify(deleted));
       }
 
-      window.dispatchEvent(new CustomEvent("sufis_menu_updated"));
+      window.dispatchEvent(new CustomEvent("3pm_menu_updated"));
     } catch {
       // ignore
     }
@@ -180,7 +180,7 @@ export async function deleteLiveCategory(id: string): Promise<boolean> {
       if (!deleted.includes(id)) deleted.push(id);
       localStorage.setItem(DELETED_CATEGORIES_KEY, JSON.stringify(deleted));
 
-      window.dispatchEvent(new CustomEvent("sufis_menu_updated"));
+      window.dispatchEvent(new CustomEvent("3pm_menu_updated"));
     } catch {
       // ignore
     }
@@ -238,7 +238,7 @@ export async function saveLiveMenuItem(item: CustomMenuItem): Promise<{ local: b
         localStorage.setItem(DELETED_ITEMS_KEY, JSON.stringify(deleted));
       }
 
-      window.dispatchEvent(new CustomEvent("sufis_menu_updated"));
+      window.dispatchEvent(new CustomEvent("3pm_menu_updated"));
     } catch (e: any) {
       local = false;
       return { local: false, online: true, error: e?.message || "Storage error" };
@@ -265,7 +265,7 @@ export async function deleteLiveMenuItem(item: { id?: string; titleEn: string })
       }
       localStorage.setItem(DELETED_ITEMS_KEY, JSON.stringify(deleted));
 
-      window.dispatchEvent(new CustomEvent("sufis_menu_updated"));
+      window.dispatchEvent(new CustomEvent("3pm_menu_updated"));
     } catch {
       // ignore
     }
@@ -370,8 +370,8 @@ export function useDynamicMenu() {
     refresh();
 
     const onUpdate = () => refresh();
-    window.addEventListener("sufis_menu_updated", onUpdate);
-    return () => window.removeEventListener("sufis_menu_updated", onUpdate);
+    window.addEventListener("3pm_menu_updated", onUpdate);
+    return () => window.removeEventListener("3pm_menu_updated", onUpdate);
   }, []);
 
   return { categories, refresh };
@@ -395,7 +395,7 @@ export const DEFAULT_HOME_FAVORITES: HomeFavoriteTile[] = [
   { id: "mocktails", labelEn: "Refreshers & Mocktails", labelHi: "रिफ्रेशर्स और मॉकटेल्स", img: "/images/passionfruit.jpg" },
 ];
 
-const FAVORITES_KEY = "sufis_home_favorites_v1";
+const FAVORITES_KEY = "3pm_home_favorites_v1";
 
 export async function fetchLiveHomeFavorites(): Promise<HomeFavoriteTile[]> {
   if (typeof window !== "undefined") {
@@ -416,7 +416,7 @@ export async function saveLiveHomeFavorites(tiles: HomeFavoriteTile[]): Promise<
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(FAVORITES_KEY, JSON.stringify(tiles));
-      window.dispatchEvent(new CustomEvent("sufis_favorites_updated", { detail: tiles }));
+      window.dispatchEvent(new CustomEvent("3pm_favorites_updated", { detail: tiles }));
     } catch {
       // ignore
     }
@@ -437,8 +437,8 @@ export function useDynamicFavorites() {
       }
     };
 
-    window.addEventListener("sufis_favorites_updated", onUpdate);
-    return () => window.removeEventListener("sufis_favorites_updated", onUpdate);
+    window.addEventListener("3pm_favorites_updated", onUpdate);
+    return () => window.removeEventListener("3pm_favorites_updated", onUpdate);
   }, []);
 
   return favorites;
@@ -469,11 +469,11 @@ export interface AboutContent {
 export const DEFAULT_ABOUT_CONTENT: AboutContent = {
   heroTitle: "A place of peace, aroma, and warmth.",
   heroSubtitle:
-    "Tucked in Kajipura, Kheda, Sufi's Cafe was envisioned as more than a coffee shop. It is a soulful neighborhood retreat designed for pause, presence, and pure flavor.",
-  storyTitle: "The Sufi's Philosophy & The Art of Coffee",
+    "Tucked in Vallabh Vidyanagar, Kheda, 3PM Cafe was envisioned as more than a coffee shop. It is a soulful neighborhood retreat designed for pause, presence, and pure flavor.",
+  storyTitle: "The 3PM Cafe Philosophy & The Art of Coffee",
   storySubtitle: "OUR ORIGIN & VALUES",
   storyP1:
-    "The name Sufi's Cafe is inspired by the timeless tradition of Sufism — rooted in tranquility, sincerity, warmth, and the sacred beauty of gathering together. We believe that coffee is more than caffeine; it is a ritual of mindful presence and genuine connection.",
+    "The name 3PM Cafe is inspired by the timeless tradition of Sufism — rooted in tranquility, sincerity, warmth, and the sacred beauty of gathering together. We believe that coffee is more than caffeine; it is a ritual of mindful presence and genuine connection.",
   storyP2:
     "From sourcing 100% specialty Arabica beans to precision-roasting and traditional preparation methods — like authentic Turkish coffee simmered with green cardamom in a copper cezve, slow hand-poured Chemex brews, and silky Spanish lattes — every beverage is prepared with passion and reverence.",
   storyP3:
@@ -486,13 +486,13 @@ export const DEFAULT_ABOUT_CONTENT: AboutContent = {
     "A thoughtfully designed cafe atmosphere bathed in warm ambient lighting, peaceful acoustic melodies, plush seating, and free high-speed Wi-Fi — the perfect space to unwind, read, write, or work.",
   pillar3Title: "Good Vibes",
   pillar3Desc:
-    "Hospitality that comes from the heart. At Sufi's Cafe, kindness is our language. We greet every guest with a smile and strive to ensure you leave happier than when you walked in.",
+    "Hospitality that comes from the heart. At 3PM Cafe, kindness is our language. We greet every guest with a smile and strive to ensure you leave happier than when you walked in.",
   supportTitle: "Thank You For Supporting Local.",
   supportDesc:
-    "Every cup of coffee you enjoy at Sufi's Cafe supports our local team, indigenous roasters, and community spirit here in Gujarat. We take pride in building a homegrown specialty coffee destination.",
+    "Every cup of coffee you enjoy at 3PM Cafe supports our local team, indigenous roasters, and community spirit here in Gujarat. We take pride in building a homegrown specialty coffee destination.",
 };
 
-const ABOUT_STORAGE_KEY = "sufis_about_content_v1";
+const ABOUT_STORAGE_KEY = "3pm_about_content_v1";
 
 export async function fetchLiveAboutContent(): Promise<AboutContent> {
   if (typeof window !== "undefined") {
@@ -513,7 +513,7 @@ export async function saveLiveAboutContent(content: AboutContent): Promise<{ suc
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(ABOUT_STORAGE_KEY, JSON.stringify(content));
-      window.dispatchEvent(new CustomEvent("sufis_about_updated", { detail: content }));
+      window.dispatchEvent(new CustomEvent("3pm_about_updated", { detail: content }));
     } catch {
       // ignore
     }
@@ -534,8 +534,8 @@ export function useDynamicAbout() {
       }
     };
 
-    window.addEventListener("sufis_about_updated", onUpdate);
-    return () => window.removeEventListener("sufis_about_updated", onUpdate);
+    window.addEventListener("3pm_about_updated", onUpdate);
+    return () => window.removeEventListener("3pm_about_updated", onUpdate);
   }, []);
 
   return about;
@@ -554,19 +554,19 @@ export interface LegalContent {
 export const DEFAULT_LEGAL_CONTENT: LegalContent = {
   updatedDate: "October 2026",
   privacyPolicy: `### 1. Purely Informational Display — Not an E-Commerce Platform
-Sufi's Cafe operates this website strictly as a digital menu, culinary showcase, and informational resource for our physical cafe located in Kajipura, Kheda, Gujarat. We do not sell items online, process digital shopping carts, accept credit card checkouts, or execute commercial e-commerce transactions through this website.
+3PM Cafe operates this website strictly as a digital menu, culinary showcase, and informational resource for our physical cafe located in Vallabh Vidyanagar, Anand, Gujarat. We do not sell items online, process digital shopping carts, accept credit card checkouts, or execute commercial e-commerce transactions through this website.
 
 ### 2. Information We Handle
 We respect the privacy of our patrons. We do not require visitors to register accounts. If you voluntarily send a WhatsApp reservation or direct inquiry, your contact information (such as your name and phone number) is used solely to respond to your inquiry and coordinate table seating at our physical premises.
 
 ### 3. No Commercial Sale or Rental of Data
-Sufi's Cafe does not sell, lease, monetize, or disclose your contact details to third-party commercial marketing networks. All communication is strictly between our cafe hospitality team and you.
+3PM Cafe does not sell, lease, monetize, or disclose your contact details to third-party commercial marketing networks. All communication is strictly between our cafe hospitality team and you.
 
 ### 4. External Services & Links
 Our website links to WhatsApp for direct customer communication and Google Maps for navigation assistance. Please refer to their respective terms and privacy policies when utilizing external platforms.
 
 ### 5. Questions & Contact
-For any inquiries regarding our privacy standards or to request deletion of any contact details, please call us directly at our published contact numbers or visit Sufi's Cafe in person.`,
+For any inquiries regarding our privacy standards or to request deletion of any contact details, please call us directly at our published contact numbers or visit 3PM Cafe in person.`,
 
   termsOfUse: `### 1. Informational Display Only (No Online Sales)
 This website is maintained solely for the presentation of our cafe brand, ambiance, and digital menu. No binding sales contracts, online ordering transactions, or e-commerce purchases are conducted via this website. All purchases occur exclusively in person at our physical cafe.
@@ -578,13 +578,13 @@ All beverages, specialty coffees, brunch dishes, and bakery items displayed on o
 Submitting a booking request via our website or via WhatsApp serves as an inquiry only and does not constitute a guaranteed reservation until directly confirmed by our cafe manager based on live table availability.
 
 ### 4. Cafe Etiquette & Tranquil Environment
-Sufi's Cafe is dedicated to maintaining a tranquil, respectful, and family-friendly atmosphere. We kindly request all guests visiting our premises in Kajipura to respect fellow patrons, staff members, and cafe property.
+3PM Cafe is dedicated to maintaining a tranquil, respectful, and family-friendly atmosphere. We kindly request all guests visiting our premises in Vallabh Vidyanagar to respect fellow patrons, staff members, and cafe property.
 
 ### 5. Proprietary Content & Trademarks
-All branding, logos, photography, typography, and original descriptions on this website are the intellectual property of Sufi's Cafe and may not be reproduced without prior written permission.`,
+All branding, logos, photography, typography, and original descriptions on this website are the intellectual property of 3PM Cafe and may not be reproduced without prior written permission.`,
 };
 
-const LEGAL_STORAGE_KEY = "sufis_legal_content_v1";
+const LEGAL_STORAGE_KEY = "3pm_legal_content_v1";
 
 export async function fetchLiveLegalContent(): Promise<LegalContent> {
   if (typeof window !== "undefined") {
@@ -605,7 +605,7 @@ export async function saveLiveLegalContent(content: LegalContent): Promise<{ suc
   if (typeof window !== "undefined") {
     try {
       localStorage.setItem(LEGAL_STORAGE_KEY, JSON.stringify(content));
-      window.dispatchEvent(new CustomEvent("sufis_legal_updated", { detail: content }));
+      window.dispatchEvent(new CustomEvent("3pm_legal_updated", { detail: content }));
     } catch {
       // ignore
     }
@@ -626,8 +626,8 @@ export function useDynamicLegal() {
       }
     };
 
-    window.addEventListener("sufis_legal_updated", onUpdate);
-    return () => window.removeEventListener("sufis_legal_updated", onUpdate);
+    window.addEventListener("3pm_legal_updated", onUpdate);
+    return () => window.removeEventListener("3pm_legal_updated", onUpdate);
   }, []);
 
   return legal;

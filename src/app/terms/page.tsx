@@ -55,7 +55,7 @@ export default function TermsOfUsePage() {
             <span>Important Notice: Purely a Digital Display Menu</span>
           </h2>
           <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-            Sufi's Cafe operates this website exclusively as an informational culinary showcase. We do not sell food or beverages online, accept digital cart checkouts, or process web payments. All culinary items, specialty brews, and bakery treats are prepared and purchased exclusively in person at our cafe in Kajipura, Gujarat.
+            3PM Cafe operates this website exclusively as an informational culinary showcase. We do not sell food or beverages online, accept digital cart checkouts, or process web payments. All culinary items, specialty brews, and bakery treats are prepared and purchased exclusively in person at our cafe in Vallabh Vidyanagar, Anand, Gujarat.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function TermsOfUsePage() {
         {/* Contact & Inquiries */}
         <div className="mt-14 rounded-2xl bg-[#1e3932] text-paper p-6 sm:p-8 shadow-xl">
           <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-2">
-            Visiting Sufi's Cafe in Kajipura
+            Visiting 3PM Cafe in Vallabh Vidyanagar
           </h3>
           <p className="text-xs sm:text-sm text-[#d4e9e2] mb-6 leading-relaxed">
             We look forward to welcoming you for fresh brews, warm food, and peaceful conversations.

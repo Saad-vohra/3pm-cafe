@@ -11,7 +11,7 @@ import {
 
 export type Lang = "en" | "hi";
 export const LANGS: Lang[] = ["en", "hi"];
-const KEY = "sufis-lang";
+const KEY = "3pm-lang";
 
 const en = {
   home: "Home",
@@ -36,8 +36,8 @@ const en = {
   fullMenu: "Full menu ↓",
   galleryTitle: "The display",
   eventsEyebrow: "Beyond the Cup",
-  eventsTitle: "Host Your Next Event at Sufi's",
-  eventsSubtitle: "From intimate gatherings to full-scale catering, we bring the warmth of Sufi's wherever you need it.",
+  eventsTitle: "Host Your Next Event at 3PM Cafe",
+  eventsSubtitle: "From intimate gatherings to full-scale catering, we bring the warmth of 3PM Cafe wherever you need it.",
   eventsPrivateTitle: "Private Events",
   eventsPrivateDesc: "Book our space for birthdays, meetings, or just a good excuse to get together. Great coffee and good vibes included.",
   eventsCateringTitle: "Catering",
@@ -55,7 +55,7 @@ const en = {
   call: "Call",
   yourTable: "Your table.",
   yourTableBlurb:
-    "Big table, small table, laptop corner or relaxing open Sufi cafe seating — tell us when and we will keep it warm.",
+    "Big table, small table, laptop corner or relaxing open cafe seating — tell us when and we will keep it warm.",
   faqTitle: "FAQ",
   addresses: "Addresses",
   hoursContact: "Hours & contact",
@@ -81,27 +81,27 @@ const en = {
   menuTitle: "The menu.",
   from: "from",
   draftNote: "Draft list only — nothing is ordered or paid here.",
-  photosNote: "All photography © Sufi's Cafe",
+  photosNote: "All photography © 3PM Cafe",
   faq: [
     {
-      q: "Where is Sufis Cafe located?",
-      a: "Sufis Cafe is located at c/o Dawat Restaurant, Ahmedabad-Narol-Kheda Highway,\nKajipura, Kheda, Gujarat 387120, India.",
+      q: "Where is 3PM Cafe located?",
+      a: "Sufis Cafe is located at c/o Dawat Restaurant, krishna empire, 201-202, Road,\nVallabh Vidyanagar, Anand, Gujarat 388120, India.",
     },
     {
-      q: "Is Sufis Cafe suitable for friends and family?",
-      a: "Absolutely! Sufis Cafe is a great place to spend quality time with friends, family, and loved ones.",
+      q: "Is 3PM Cafe suitable for friends and family?",
+      a: "Absolutely! 3PM Cafe is a great place to spend quality time with friends, family, and loved ones.",
     },
     {
-      q: "Does Sufis Cafe have free parking and Wi-Fi?",
+      q: "Does 3PM Cafe have free parking and Wi-Fi?",
       a: "Yes! Customers can enjoy both free parking and complimentary Wi-Fi.",
     },
     {
-      q: "Is Sufis Cafe an open-air cafe?",
-      a: "Yes! Sufis Cafe offers an open cafe experience where you can enjoy your time in a relaxed atmosphere.",
+      q: "Is 3PM Cafe an open-air cafe?",
+      a: "Yes! 3PM Cafe offers an open cafe experience where you can enjoy your time in a relaxed atmosphere.",
     },
     {
-      q: "Is Sufis Cafe open now?",
-      a: "Yes, Sufis Cafe is open daily (08:00 – 21:00). Please check our current operating hours before visiting.",
+      q: "Is 3PM Cafe open now?",
+      a: "Yes, 3PM Cafe is open daily (08:00 – 21:00). Please check our current operating hours before visiting.",
     },
   ],
 };

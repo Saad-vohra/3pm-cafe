@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://sufiscafe.com/sitemap.xml
+Sitemap: https://3pmcafe.com/sitemap.xml

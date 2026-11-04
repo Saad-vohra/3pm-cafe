@@ -16,7 +16,7 @@ export interface ItemDetailData {
 }
 
 const DETAILS_MAP: Record<string, ItemDetailData> = {
-  "Sufi's Special Coffee (House Blend)": {
+  "3PM Special Coffee (House Blend)": {
     ingredients: {
       en: ["Single-origin Arabica beans", "Secret roast spices", "Steamed full cream milk", "Velvet cocoa dust"],
       hi: ["सिंगल ओरिजिन अरेबिका बीन्स", "सीक्रेट मसाले", "गाढ़ा गर्म दूध", "कोको डस्ट"],
@@ -82,7 +82,7 @@ const DETAILS_MAP: Record<string, ItemDetailData> = {
     },
   },
 
-  "Sufi's Special Platter": {
+  "3PM Special Platter": {
     ingredients: {
       en: ["Mini grilled wraps", "Crispy loaded fries", "Cheese nachos with salsa", "Chipotle aioli", "Mint garlic dip"],
       hi: ["मिनी वेज रैप", "क्रिस्पी लोडेड फ्राइज़", "चीज़ नाचोज़", "साल्सा", "स्पेशल डिप्स"],

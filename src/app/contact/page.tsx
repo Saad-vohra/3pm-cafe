@@ -66,7 +66,7 @@ const BOOKING_TYPES = [
     id: "private-party",
     label: { en: "Private Event / Gathering", hi: "प्राइवेट पार्टी / इवेंट" },
     icon: "🎉",
-    desc: { en: "Book our open Sufi cafe space for intimate gatherings", hi: "ओपन सूफ़ी कैफ़े स्पेस को निजी कार्यक्रम के लिए बुक करें" },
+    desc: { en: "Book our open cafe space for intimate gatherings", hi: "ओपन सूफ़ी कैफ़े स्पेस को निजी कार्यक्रम के लिए बुक करें" },
   },
   {
     id: "catering-bulk",
@@ -106,7 +106,7 @@ const CAFE_PHOTOS = [
   },
   {
     src: "/images/events-catering.jpg",
-    title: { en: "Serene Open Sufi Cafe Space", hi: "सुकूनदेह ओपन सूफ़ी कैफ़े स्पेस" },
+    title: { en: "Serene Open Cafe Space", hi: "सुकूनदेह ओपन सूफ़ी कैफ़े स्पेस" },
     desc: { en: "Open sky breeze, potted plants, and fairy lights", hi: "खुला आसमान, हरियाली और मनमोहक रोशनी" },
   },
   {
@@ -215,7 +215,7 @@ export default function ContactPage() {
 👥 *Guests / Quantity:* ${guests}
 ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : ""}──────────────────────────
 ℹ️ *Our staff will contact you soon about available seats and booking confirmation.*
-📍 *Location:* Sufi's Cafe, c/o Dawat Restaurant, Ahmedabad-Narol-Kheda Highway, Kajipura, Gujarat 387120`;
+📍 *Location:* 3PM Cafe, krishna empire, 201-202, Road, Vallabh Vidyanagar, Anand, Gujarat 388120`;
 
     const cleanNumber = "918320812121";
     const waUrl = `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
@@ -384,13 +384,13 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
 
               <div className="mt-6 pt-4 border-t border-[#006241]/10">
                 <a
-                  href={BRAND.instagramUrl || "https://www.instagram.com/__.sufiscafe?cplk=MW9saTB4NXppZnQzOA=="}
+                  href={BRAND.instagramUrl || "https://www.instagram.com/__.3pmcafe?cplk=MW9saTB4NXppZnQzOA=="}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-line w-full !py-2 text-xs font-semibold justify-center !border-rose-300 text-rose-800 hover:!bg-rose-50"
                 >
                   <InstagramIcon className="size-3.5" />
-                  {lang === "en" ? "Follow @__.sufiscafe" : "इंस्टाग्राम पर फॉलो करें"}
+                  {lang === "en" ? "Follow @__.3pmcafe" : "इंस्टाग्राम पर फॉलो करें"}
                 </a>
               </div>
             </div>
@@ -404,7 +404,7 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
                 <p className="eyebrow !text-[#006241] !text-[11px] font-bold">
                   {lang === "en" ? "VISIT OUR CAFE" : "कैफ़े का पता"}
                 </p>
-                <h3 className="mt-1 text-lg font-bold text-[#1e3932] tracking-tight">Kajipura, Gujarat</h3>
+                <h3 className="mt-1 text-lg font-bold text-[#1e3932] tracking-tight">Vallabh Vidyanagar, Anand, Gujarat</h3>
                 <p className="mt-2 text-xs text-[#4a6058] leading-relaxed line-clamp-2">
                   {BRAND.locations[0].address}
                 </p>
@@ -618,7 +618,7 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder={
                       lang === "en"
-                        ? "e.g. Birthday celebration, open Sufi cafe table, specific dishes needed..."
+                        ? "e.g. Birthday celebration, open cafe table, specific dishes needed..."
                         : "उदा. जन्मदिन का केक, ओपन सूफ़ी कैफ़े टेबल, स्पेशल कॉफ़ी..."
                     }
                     className="w-full rounded-2xl border border-[#006241]/20 bg-[#f7f5f0] px-4 py-3 text-sm text-[#1e3932] shadow-sm transition-all focus:border-[#006241] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#006241]/20"
@@ -658,7 +658,7 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
                       {lang === "en" ? "LANDMARK & DIRECTIONS" : "पहुंचने का रास्ता"}
                     </span>
                     <h3 className={`${display} text-2xl font-bold text-[#1e3932]`}>
-                      {lang === "en" ? "Locate Sufi's Cafe" : "सूफ़ी कैफ़े की लोकेशन"}
+                      {lang === "en" ? "Locate 3PM Cafe" : "सूफ़ी कैफ़े की लोकेशन"}
                     </h3>
                   </div>
                 </div>
@@ -737,7 +737,7 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
                 <div className="mt-4 rounded-xl bg-paper/80 p-3 text-center border border-[#006241]/10">
                   <p className="text-xs text-[#2d4a40]">
                     {lang === "en"
-                      ? "Open Sufi cafe experience, peaceful ambiance, and quiet corners for laptop work."
+                      ? "Open cafe experience, peaceful ambiance, and quiet corners for laptop work."
                       : "ओपन सूफ़ी कैफ़े का सुकून भरा माहौल और शांत वर्क कॉर्नर उपलब्ध हैं।"}
                   </p>
                 </div>
@@ -763,7 +763,7 @@ ${notes.trim() ? `📝 *Special Notes / Menu Preferences:* ${notes.trim()}\n` : 
               <div className="rounded-2xl border border-white/15 bg-white/5 p-5 backdrop-blur-sm">
                 <h4 className="text-base font-bold text-white flex items-center gap-2">
                   <Coffee className="size-4 text-[#d4e9e2]" />
-                  {lang === "en" ? "Can I host birthday parties at Sufi's?" : "क्या मैं सूफ़ी में जन्मदिन पार्टी मना सकता हूँ?"}
+                  {lang === "en" ? "Can I host birthday parties at 3PM Cafe?" : "क्या मैं सूफ़ी में जन्मदिन पार्टी मना सकता हूँ?"}
                 </h4>
                 <p className="mt-2 text-xs sm:text-sm text-paper/85 leading-relaxed">
                   {lang === "en"

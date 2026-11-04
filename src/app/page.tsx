@@ -19,19 +19,19 @@ import { NOINTRO, STILL, scrollToId, useLenis } from "@/lib/scroll";
 const HERO_SLIDES = [
   {
     src: "/images/hero-slide-2.jpg",
-    alt: "Warm cafe counter with iced matcha latte, cappuccino and fresh croissants at Sufi's Cafe",
+    alt: "Warm cafe counter with iced matcha latte, cappuccino and fresh croissants at 3PM Cafe",
     objectPosition: "center center",
     transformOrigin: "center center",
   },
   {
     src: "/images/hero-slide-1.jpg",
-    alt: "Matcha iced latte, toast with avocado, cappuccino and croissant at Sufi's Cafe",
+    alt: "Matcha iced latte, toast with avocado, cappuccino and croissant at 3PM Cafe",
     objectPosition: "center center",
     transformOrigin: "center center",
   },
   {
     src: "/images/hero-slide-3.jpg",
-    alt: "Caramel iced drink, grilled cheese sandwich and tiramisu at Sufi's Cafe",
+    alt: "Caramel iced drink, grilled cheese sandwich and tiramisu at 3PM Cafe",
     objectPosition: "88% 70%",
     transformOrigin: "88% 70%",
   },
@@ -40,15 +40,15 @@ const HERO_SLIDES = [
 const MOBILE_HERO_SLIDES = [
   {
     src: "/images/hero-mobile-cheese.jpg",
-    alt: "Cheesy pull-apart garlic bread, loaded nachos and strawberry drink at Sufi's Cafe",
+    alt: "Cheesy pull-apart garlic bread, loaded nachos and strawberry drink at 3PM Cafe",
   },
   {
     src: "/images/hero-mobile-terracotta.jpg",
-    alt: "Iced caramel latte, artisan tiramisu dessert and roasted coffee beans at Sufi's Cafe",
+    alt: "Iced caramel latte, artisan tiramisu dessert and roasted coffee beans at 3PM Cafe",
   },
   {
     src: "/images/hero-mobile-mocktail.jpg",
-    alt: "Vibrant blue curacao mocktail, mint lime mojito and fresh citrus at Sufi's Cafe",
+    alt: "Vibrant blue curacao mocktail, mint lime mojito and fresh citrus at 3PM Cafe",
   },
 ];
 
@@ -606,7 +606,7 @@ export default function HomePage() {
               </p>
               <div className="mt-6">
                 <a
-                  href="https://wa.me/918320812121?text=Hi%20Sufi's%20Cafe,%20I'd%20like%20to%20customize%20a%20menu%20for%20an%20event!"
+                  href="https://wa.me/918320812121?text=Hi%203PM Cafe%20Cafe,%20I'd%20like%20to%20customize%20a%20menu%20for%20an%20event!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-ink !bg-[#006241] !text-paper hover:!bg-[#1e3932] shadow-sm inline-flex items-center gap-2"
@@ -640,7 +640,7 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-6 sm:gap-8 max-sm:w-full max-sm:justify-around">
             <a
-              href="https://wa.me/918320812121?text=Hi%20Sufi's%20Cafe,%20I'd%20like%20to%20inquire%20about%20hosting%20an%20event!"
+              href="https://wa.me/918320812121?text=Hi%203PM Cafe%20Cafe,%20I'd%20like%20to%20inquire%20about%20hosting%20an%20event!"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col items-center gap-2 text-center"
@@ -689,7 +689,7 @@ export default function HomePage() {
               <div className="relative -mx-6 -mt-6 sm:-mx-8 sm:-mt-8 mb-6 aspect-[16/10] overflow-hidden rounded-t-[32px] bg-neutral-100 shadow-inner">
                 <img
                   src="/images/venue.jpg"
-                  alt="Sufi's Cafe Kajipura authentic welcoming storefront and outdoor patio"
+                  alt="3PM Cafe Vallabh Vidyanagar authentic welcoming storefront and outdoor patio"
                   loading="lazy"
                   decoding="async"
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -697,7 +697,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md text-white text-[11px] font-semibold tracking-wider uppercase shadow-sm">
                   <span className="size-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Dine-In · Takeaway · Open Sufi Cafe</span>
+                  <span>Dine-In · Takeaway · Open Cafe</span>
                 </div>
               </div>
 
@@ -705,9 +705,9 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1e3932] tracking-tight">
-                    Sufi's Cafe
+                    3PM Cafe
                     <span className="text-base sm:text-lg font-sans font-normal text-[#07543D] ml-2">
-                      · Kajipura
+                      · Vallabh Vidyanagar
                     </span>
                   </h3>
                   <p className="text-xs uppercase tracking-widest text-[#4a6058] font-semibold mt-1">
@@ -757,7 +757,7 @@ export default function HomePage() {
               <div className="flex items-center gap-3 mb-6">
                 <img
                   src="/images/logo.png"
-                  alt="Sufi's Cafe Logo"
+                  alt="3PM Cafe Logo"
                   className="size-13 rounded-full object-contain bg-white p-1 ring-2 ring-white/30 shadow-md"
                 />
                 <div className="h-9 w-px bg-white/20" />
@@ -779,7 +779,7 @@ export default function HomePage() {
                   </span>
                 </h3>
                 <p className="text-xs uppercase tracking-widest text-[#d4e9e2]/80 font-semibold mt-1">
-                  {lang === "en" ? "Dine-In · Open Sufi Cafe · Celebrations" : "डाइन-इन · ओपन सूफ़ी कैफ़े · समारोह"}
+                  {lang === "en" ? "Dine-In · Open Cafe · Celebrations" : "डाइन-इन · ओपन सूफ़ी कैफ़े · समारोह"}
                 </p>
               </div>
 
@@ -795,7 +795,7 @@ export default function HomePage() {
                   </div>
                   <span className="leading-relaxed">
                     {lang === "en"
-                      ? "Open Sufi cafe experience, peaceful ambiance & cozy seating"
+                      ? "Open cafe experience, peaceful ambiance & cozy seating"
                       : "ओपन सूफ़ी कैफ़े का सुकून भरा माहौल और आरामदायक सिटिंग"}
                   </span>
                 </div>

@@ -4,29 +4,29 @@ import "./globals.css";
 import { LangProvider } from "@/lib/i18n";
 import { BRAND } from "@/lib/brand";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sufiscafe.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://3pmcafe.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Sufi's Cafe · Specialty Coffee, Matcha & Brunch · Kajipura, Gujarat",
-    template: "%s | Sufi's Cafe",
+    default: "3PM Cafe · Specialty Coffee, Matcha & Brunch · Vallabh Vidyanagar, Anand, Gujarat",
+    template: "%s | 3PM Cafe",
   },
   description:
-    "Sufi's Cafe blends specialty Arabica coffee, ceremonial matcha, artisanal brunch, and peaceful hospitality in Kajipura, Kheda, Gujarat. Dine-in and takeaway, open daily 08:00 – 21:00.",
+    "3PM Cafe blends specialty Arabica coffee, ceremonial matcha, artisanal brunch, and peaceful hospitality in Vallabh Vidyanagar, Anand, Gujarat. Dine-in and takeaway, open daily 08:00 – 21:00.",
   keywords: [
-    "Sufi's Cafe",
-    "Sufis Cafe Kheda",
-    "Cafe in Kajipura",
+    "3PM Cafe",
+    "3PM Cafe Anand",
+    "Cafe in Vallabh Vidyanagar",
     "Specialty Coffee Gujarat",
     "Matcha Bar Gujarat",
     "Cafe near Ahmedabad Narol Highway",
     "All-day Brunch Kheda",
-    "Sufis Cafe Menu",
+    "3PM Cafe Menu",
   ],
-  authors: [{ name: "Sufi's Cafe", url: siteUrl }],
-  creator: "Sufi's Cafe",
-  publisher: "Sufi's Cafe",
+  authors: [{ name: "3PM Cafe", url: siteUrl }],
+  creator: "3PM Cafe",
+  publisher: "3PM Cafe",
   formatDetection: {
     telephone: true,
     address: true,
@@ -44,27 +44,27 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Sufi's Cafe · Specialty Coffee, Matcha & Brunch",
+    title: "3PM Cafe · Specialty Coffee, Matcha & Brunch",
     description:
-      "A peaceful neighborhood sanctuary for specialty coffee, ceremonial matcha, and artisanal brunch in Kajipura, Kheda, Gujarat. Open daily 08:00 – 21:00.",
+      "A peaceful neighborhood sanctuary for specialty coffee, ceremonial matcha, and artisanal brunch in Vallabh Vidyanagar, Anand, Gujarat. Open daily 08:00 – 21:00.",
     type: "website",
     url: siteUrl,
-    siteName: "Sufi's Cafe",
+    siteName: "3PM Cafe",
     locale: "en_IN",
     images: [
       {
         url: "/images/venue.jpg",
         width: 1200,
         height: 675,
-        alt: "Sufi's Cafe Storefront and Welcoming Ambiance in Kajipura, Gujarat",
+        alt: "3PM Cafe Storefront and Welcoming Ambiance in Vallabh Vidyanagar, Anand, Gujarat",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sufi's Cafe · Specialty Coffee, Matcha & Brunch",
+    title: "3PM Cafe · Specialty Coffee, Matcha & Brunch",
     description:
-      "A peaceful neighborhood sanctuary for specialty coffee, ceremonial matcha, and artisanal brunch in Kajipura, Gujarat. Open daily 08:00 – 21:00.",
+      "A peaceful neighborhood sanctuary for specialty coffee, ceremonial matcha, and artisanal brunch in Vallabh Vidyanagar, Anand, Gujarat. Open daily 08:00 – 21:00.",
     images: ["/images/venue.jpg"],
   },
   robots: {
@@ -93,7 +93,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       {
         "@type": ["CafeOrCoffeeShop", "Restaurant"],
         "@id": `${siteUrl}/#cafe`,
-        name: "Sufi's Cafe",
+        name: "3PM Cafe",
         url: siteUrl,
         telephone: BRAND.phone,
         priceRange: "₹₹",
@@ -109,7 +109,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         address: {
           "@type": "PostalAddress",
           streetAddress: "c/o Dawat Restaurant, Ahmedabad-Narol-Kheda Highway",
-          addressLocality: "Kajipura",
+          addressLocality: "Vallabh Vidyanagar",
           addressRegion: "Gujarat",
           postalCode: "387120",
           addressCountry: "IN",
@@ -137,14 +137,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         ],
         hasMap: BRAND.locations[0].maps,
         sameAs: [
-          "https://www.instagram.com/__.sufiscafe",
+          "https://www.instagram.com/__.3pmcafe",
         ],
       },
       {
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         url: siteUrl,
-        name: "Sufi's Cafe",
+        name: "3PM Cafe",
         inLanguage: ["en", "hi"],
       },
     ],

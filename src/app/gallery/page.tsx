@@ -153,7 +153,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: { en: "Classic Italian Tiramisu", hi: "क्लासिक इटैलियन तिरामिसु" },
     badge: { en: "House Classic", hi: "हाउस क्लासिक" },
     desc: {
-      en: "House ladyfingers soaked in Sufi's fresh espresso, layered with whipped mascarpone and dark Dutch cocoa.",
+      en: "House ladyfingers soaked in 3PM Cafe fresh espresso, layered with whipped mascarpone and dark Dutch cocoa.",
       hi: "सूफ़ी के ताज़ा एस्प्रेसो में डूबी लेडीफिंगर्स, मस्कार्पोने क्रीम और डार्क डच कोको की परतें।",
     },
     details: {
@@ -189,7 +189,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: "sufi-special-dessert",
     src: "/images/sufi-special-dessert.jpg",
     category: "desserts",
-    title: { en: "Sufi's Signature Sweet Creation", hi: "सूफ़ी स्पेशल डेज़र्ट" },
+    title: { en: "3PM Cafe Signature Sweet Creation", hi: "सूफ़ी स्पेशल डेज़र्ट" },
     badge: { en: "Exclusive", hi: "खास पेशकश" },
     desc: {
       en: "An artisanal fusion dessert crafted with dry fruit crumbs, delicate saffron glaze, and fresh cream.",
@@ -379,8 +379,8 @@ const GALLERY_ITEMS: GalleryItem[] = [
     id: "venue-terrace",
     src: "/images/events-private.jpg",
     category: "ambiance",
-    title: { en: "Serene Open Sufi Cafe Space", hi: "सुकूनदेह ओपन सूफ़ी कैफ़े" },
-    badge: { en: "Open Sufi Vibe", hi: "ओपन सूफ़ी कैफ़े" },
+    title: { en: "Serene Open Cafe Space", hi: "सुकूनदेह ओपन सूफ़ी कैफ़े" },
+    badge: { en: "Open Cafe Vibe", hi: "ओपन सूफ़ी कैफ़े" },
     desc: {
       en: "Breathe under open skies amidst lush greenery, fairy lights, and natural wooden tables.",
       hi: "खुले आसमान के नीचे हरियाली, रोशनी और सुकून भरे माहौल में कॉफ़ी का मज़ा लें।",
@@ -418,7 +418,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     category: "ambiance",
     title: { en: "Golden Hour Glow & Main Courtyard", hi: "शाम का नज़ारा और मुख्य आंगन" },
     desc: {
-      en: "As dusk falls over Kajipura, Sufi's lights up with warm amber glow and the smell of freshly roasted beans.",
+      en: "As dusk falls over Vallabh Vidyanagar, 3PM Cafe lights up with warm amber glow and the smell of freshly roasted beans.",
       hi: "काजीपुरा में शाम की ढलती धूप और सूफ़ी की सुनहरी रोशनी के बीच ताज़ा भुनी कॉफ़ी की महक।",
     },
   },
@@ -537,7 +537,7 @@ export default function GalleryPage() {
             className="mx-auto mt-5 max-w-3xl text-base sm:text-lg leading-relaxed text-[#2d4a40]"
           >
             {lang === "en"
-              ? "Welcome to the visual gallery of Sufi's Cafe. Explore our specialty hand-poured coffees, authentic slow-cooked Turkish brews, scratch-made bakes, vibrant brunch bites, and peaceful open Sufi cafe corners designed for warm conversations."
+              ? "Welcome to the visual gallery of 3PM Cafe. Explore our specialty hand-poured coffees, authentic slow-cooked Turkish brews, scratch-made bakes, vibrant brunch bites, and peaceful open cafe corners designed for warm conversations."
               : "सूफ़ी कैफ़े की खूबसूरत गैलरी में आपका स्वागत है। हमारी ताज़ा एस्प्रेसो और पोर-ओवर कॉफ़ी, पारंपरिक तुर्की ब्रूज़, इन-हाउस बेक्ड डेज़र्ट्स, स्वादिष्ट स्नैक्स और सुकून भरे खूबसूरत कोनों की झलक देखें।"}
           </motion.p>
 
@@ -563,7 +563,7 @@ export default function GalleryPage() {
             <div className="flex items-center gap-2 rounded-full border border-[#006241]/15 bg-white/80 px-4 py-1.5 shadow-sm">
               <span className="size-2 rounded-full bg-[#006241]" />
               <span className="text-xs sm:text-sm font-medium text-[#1e3932]">
-                {lang === "en" ? "Open Sufi Cafe" : "ओपन सूफ़ी कैफ़े"}
+                {lang === "en" ? "Open Cafe" : "ओपन सूफ़ी कैफ़े"}
               </span>
             </div>
           </motion.div>
@@ -687,7 +687,7 @@ export default function GalleryPage() {
           <div className="relative overflow-hidden rounded-[32px] bg-[#1e3932] p-8 sm:p-14 text-center text-paper shadow-2xl border border-white/20">
             <div className="relative z-10 mx-auto max-w-3xl">
               <span className="eyebrow !text-[#d4e9e2] !tracking-[0.25em]">
-                {lang === "en" ? "THE SUFI PHILOSOPHY" : "सूफ़ी का फलसफा"}
+                {lang === "en" ? "THE 3PM PHILOSOPHY" : "सूफ़ी का फलसफा"}
               </span>
 
               <p className="font-serif text-2xl sm:text-4xl italic leading-snug mt-4 text-white">
@@ -697,7 +697,7 @@ export default function GalleryPage() {
               </p>
 
               <p className="mt-4 text-xs sm:text-sm uppercase tracking-[0.2em] text-[#d4e9e2]/80">
-                {BRAND.name} · Kajipura, Gujarat · Fresh Brews & Pure Moments
+                {BRAND.name} · Vallabh Vidyanagar, Anand, Gujarat · Fresh Brews & Pure Moments
               </p>
             </div>
 
@@ -726,7 +726,7 @@ export default function GalleryPage() {
 
               <p className="mt-4 text-base sm:text-lg text-[#2d4a40] leading-relaxed">
                 {lang === "en"
-                  ? "Step into our serene cafe at Kajipura, Gujarat. Enjoy freshly ground specialty brews, mouth-watering desserts, and relaxing terrace views."
+                  ? "Step into our serene cafe at Vallabh Vidyanagar, Anand, Gujarat. Enjoy freshly ground specialty brews, mouth-watering desserts, and relaxing terrace views."
                   : "काजीपुरा, गुजरात में हमारे खूबसूरत कैफ़े में पधारें। ताज़ा ग्राइंड की हुई कॉफ़ी, बेहतरीन डेज़र्ट्स और सुकूनदेह माहौल का आनंद लें।"}
               </p>
 

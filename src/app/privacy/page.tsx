@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href={brand.whatsapp ? `https://wa.me/${brand.whatsapp.replace(/[^0-9]/g, "")}?text=Hi%20Sufi%27s%20Cafe%21` : BRAND.whatsappUrl}
+              href={brand.whatsapp ? `https://wa.me/${brand.whatsapp.replace(/[^0-9]/g, "")}?text=Hi%203PM%20Cafe%21` : BRAND.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#006241] hover:bg-[#004f36] text-white text-xs sm:text-sm font-semibold transition-all shadow-md"

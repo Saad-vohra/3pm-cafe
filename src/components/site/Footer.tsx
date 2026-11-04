@@ -69,12 +69,12 @@ export function Footer() {
 
   return (
     <footer className="relative z-10 mt-14 sm:mt-20 rounded-t-[28px] sm:rounded-t-[36px] bg-[#1e3932] px-[5%] sm:px-[6%] pt-8 sm:pt-12 pb-7 text-paper overflow-hidden shadow-2xl border-t border-white/10">
-      {/* Top Branding Section: Balanced Logo Emblem + SUFI'S CAFE Header */}
+      {/* Top Branding Section: Balanced Logo Emblem + 3PM CAFE Header */}
       <div className="pb-6 sm:pb-8 border-b border-white/15">
         <div className="flex items-center gap-3.5 sm:gap-5">
           <img
             src="/images/logo.png"
-            alt="Sufi's Cafe Logo Emblem"
+            alt="3PM Cafe Logo Emblem"
             className="size-12 sm:size-16 rounded-full object-contain bg-white p-1 ring-2 ring-white/20 shadow-xl shrink-0 transition-transform duration-300 hover:scale-105"
           />
           <div className="flex flex-col">
@@ -85,7 +85,7 @@ export function Footer() {
               transition={{ duration: 0.5 }}
               className={`${display} flex items-baseline gap-2 sm:gap-3 leading-none text-paper select-none font-bold tracking-tight text-[26px] sm:text-[38px] md:text-[46px]`}
             >
-              <span>SUFI&apos;S</span>
+              <span>3PM</span>
               <span className="text-[#d4e9e2]">CAFE</span>
             </motion.div>
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-[#d4e9e2]/85 mt-1 sm:mt-1.5">
@@ -101,7 +101,7 @@ export function Footer() {
         <div className="md:col-span-5 space-y-4">
           <p className="max-w-md text-xs sm:text-sm text-paper/85 leading-relaxed font-normal">
             {lang === "en"
-              ? "Where every sip brings peace to your soul. Authentic specialty coffees, Turkish brews, fresh French bakes & heartfelt conversations in Kajipura, Gujarat."
+              ? "Where every sip brings peace to your soul. Authentic specialty coffees, Turkish brews, fresh French bakes & heartfelt conversations in Vallabh Vidyanagar, Anand, Gujarat."
               : "कजीपुरा, गुजरात में ताज़ी कॉफ़ी, तुर्की काढ़ा, लज़ीज़ बेकरी और सुकून भरा सूफ़ी माहौल।"}
           </p>
 
@@ -222,9 +222,9 @@ export function Footer() {
             <div className="flex items-start gap-2">
               <MapPin className="size-3.5 shrink-0 text-[#d4e9e2] mt-0.5" />
               <div>
-                <p className="font-bold text-white leading-tight">Kajipura, Gujarat</p>
+                <p className="font-bold text-white leading-tight">Vallabh Vidyanagar, Anand, Gujarat</p>
                 <p className="text-[11px] sm:text-xs text-paper/75 leading-relaxed mt-0.5">
-                  Sufi&apos;s Cafe, c/o Dawat Restaurant, Ahmedabad-Narol-Kheda Highway, Kajipura, Gujarat 387120
+                  3PM Cafe, krishna empire, 201-202, Road, Vallabh Vidyanagar, Anand, Gujarat 388120
                 </p>
               </div>
             </div>
@@ -316,7 +316,7 @@ export function Footer() {
                     <h3 className="text-xl font-bold text-[#1e3932]">
                       {legalModal === "privacy" ? "Privacy Policy" : "Terms & Conditions"}
                     </h3>
-                    <p className="text-xs text-[#4a6058]">{BRAND.name} · Kajipura, Gujarat</p>
+                    <p className="text-xs text-[#4a6058]">{BRAND.name} · Vallabh Vidyanagar, Anand, Gujarat</p>
                   </div>
                 </div>
 

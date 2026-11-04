@@ -47,7 +47,7 @@ export default function AboutPage() {
             >
               <img
                 src="/images/logo.png"
-                alt="Sufi's Cafe"
+                alt="3PM Cafe"
                 className="size-5 rounded-full object-contain"
               />
               <span className="eyebrow !text-[#006241] !tracking-[0.22em] font-semibold">
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <div className="relative aspect-[16/9] max-h-[580px] w-full min-h-[400px]">
               <img
                 src="/images/about-cafe.jpg"
-                alt="Sufi's Cafe Interior Ambiance"
+                alt="3PM Cafe Interior Ambiance"
                 className="size-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#142823]/95 via-[#142823]/60 to-black/30" />
@@ -114,7 +114,7 @@ export default function AboutPage() {
                   </h2>
                   <p className="mt-3 text-sm sm:text-base lg:text-lg text-paper/95 leading-relaxed break-words">
                     {about.heroSubtitle || (lang === "en"
-                      ? "Tucked in Kajipura, Kheda, Sufi's Cafe was envisioned as more than a coffee shop. It is a soulful neighborhood retreat designed for pause, presence, and pure flavor."
+                      ? "Tucked in Vallabh Vidyanagar, Kheda, 3PM Cafe was envisioned as more than a coffee shop. It is a soulful neighborhood retreat designed for pause, presence, and pure flavor."
                       : "काजीपुरा, खेड़ा (गुजरात) में बसा सूफ़ी कैफ़े सिर्फ़ एक कॉफ़ी शॉप नहीं है — यह दिल को तसल्ली देने वाला एक ऐसा आशियाना है जहाँ हर पल खास बन जाता है।")}
                   </p>
                 </div>
@@ -156,7 +156,7 @@ export default function AboutPage() {
                   ) : (
                     <>
                       <p>
-                        The name <strong className="font-semibold text-[#1e3932]">Sufi&apos;s Cafe</strong> is inspired by the timeless tradition of Sufism — rooted in tranquility, sincerity, warmth, and the sacred beauty of gathering together. We believe that coffee is more than caffeine; it is a ritual of mindful presence and genuine connection.
+                        The name <strong className="font-semibold text-[#1e3932]">3PM Cafe</strong> is a place of warmth, community, and soulful connection — rooted in tranquility, sincerity, warmth, and the sacred beauty of gathering together. We believe that coffee is more than caffeine; it is a ritual of mindful presence and genuine connection.
                       </p>
                       <p>
                         From sourcing <strong className="font-semibold text-[#006241]">100% specialty Arabica beans</strong> to precision-roasting and traditional preparation methods — like authentic Turkish coffee simmered with green cardamom in a copper cezve, slow hand-poured Chemex brews, and silky Spanish lattes — every beverage is prepared with passion and reverence.
@@ -195,7 +195,7 @@ export default function AboutPage() {
                           : "जहाँ हर घूंट आपकी आत्मा को शांति और ताज़गी प्रदान करता है।"}
                       </p>
                       <p className="mt-1 text-[11px] uppercase tracking-wider text-muted font-sans font-semibold">
-                        {lang === "en" ? "— The Sufi's Cafe Promise" : "— सूफ़ी कैफ़े का वादा"}
+                        {lang === "en" ? "— The 3PM Cafe Promise" : "— सूफ़ी कैफ़े का वादा"}
                       </p>
                     </div>
                   </div>
@@ -210,7 +210,7 @@ export default function AboutPage() {
                 <div className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-white/60 shadow-lg aspect-[4/5] bg-paper">
                   <img
                     src="/images/latte.jpg"
-                    alt="Latte at Sufi's Cafe"
+                    alt="Latte at 3PM Cafe"
                     loading="lazy"
                     decoding="async"
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -226,7 +226,7 @@ export default function AboutPage() {
                 <div className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-white/60 shadow-lg aspect-[4/5] bg-paper sm:mt-8">
                   <img
                     src="/images/pourover.jpg"
-                    alt="Pour Over Coffee at Sufi's Cafe"
+                    alt="Pour Over Coffee at 3PM Cafe"
                     loading="lazy"
                     decoding="async"
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -242,7 +242,7 @@ export default function AboutPage() {
                 <div className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-white/60 shadow-lg aspect-[4/5] bg-paper sm:-mt-8">
                   <img
                     src="/images/spanish-latte.jpg"
-                    alt="Spanish Latte at Sufi's Cafe"
+                    alt="Spanish Latte at 3PM Cafe"
                     loading="lazy"
                     decoding="async"
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -258,7 +258,7 @@ export default function AboutPage() {
                 <div className="group relative overflow-hidden rounded-2xl sm:rounded-3xl border border-white/60 shadow-lg aspect-[4/5] bg-paper">
                   <img
                     src="/images/siphon.jpg"
-                    alt="Siphon Brew at Sufi's Cafe"
+                    alt="Siphon Brew at 3PM Cafe"
                     loading="lazy"
                     decoding="async"
                     className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -330,7 +330,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-base leading-relaxed text-paper/85">
                   {lang === "en"
-                    ? "Hospitality that comes from the heart. At Sufi's Cafe, kindness is our language. We greet every guest with a smile and strive to ensure you leave happier than when you walked in."
+                    ? "Hospitality that comes from the heart. At 3PM Cafe, kindness is our language. We greet every guest with a smile and strive to ensure you leave happier than when you walked in."
                     : "सच्चे दिल से की जाने वाली मेहमाननवाज़ी। सूफ़ी कैफ़े में अपनापन ही हमारी पहचान है — हम सिर्फ़ कॉफ़ी नहीं परोसते, हम खुशियाँ बाँटते हैं।"}
                 </p>
               </div>
@@ -350,7 +350,7 @@ export default function AboutPage() {
                   {about.supportTitle || "Thank You For Supporting Local."}
                 </h2>
                 <p className="text-base sm:text-lg leading-relaxed text-[#2c3e35]">
-                  {about.supportDesc || "Every cup of coffee you enjoy at Sufi's Cafe supports our local team, indigenous roasters, and community spirit here in Gujarat. We take pride in building a homegrown specialty coffee destination."}
+                  {about.supportDesc || "Every cup of coffee you enjoy at 3PM Cafe supports our local team, indigenous roasters, and community spirit here in Gujarat. We take pride in building a homegrown specialty coffee destination."}
                 </p>
 
                 <div className="pt-2 flex flex-wrap gap-4">
