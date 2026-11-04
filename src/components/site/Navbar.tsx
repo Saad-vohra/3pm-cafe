@@ -246,17 +246,29 @@ export function Navbar({
         className="sticky top-0 z-[60] w-full border-b border-[#006241]/15 bg-[#fbf9f5]/95 backdrop-blur-md shadow-xs transition-colors duration-300"
       >
         <div className="w-full px-4 sm:px-8 lg:px-14 py-1.5 sm:py-2.5 lg:py-2 flex items-center justify-between">
-          {/* Left: Brand Logo only — logo image already contains the text */}
+          {/* Left: Brand Logo + divider line + 3PM (large) + Cafe & restro (small below) */}
           <button
             type="button"
             onClick={() => handleNav("/")}
-            className="group flex items-center py-0.5 text-left cursor-pointer"
+            className="group flex items-center gap-3 sm:gap-3.5 lg:gap-4 py-0.5 text-left cursor-pointer"
           >
             <img
               src="/images/logo.png"
               alt="3PM Cafe Logo"
-              className="h-11 sm:h-12 lg:h-14 w-auto object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0"
+              className="h-11 sm:h-12 lg:h-[52px] w-auto object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0"
             />
+            <div className="h-8 sm:h-9 lg:h-10 w-px bg-[#006241]/30" />
+            <div className="flex flex-col text-left">
+              <span
+                className="font-serif tracking-[0.15em] font-bold leading-none text-[#006241]"
+                style={{ fontSize: "clamp(20px, 2.2vw, 26px)" }}
+              >
+                3PM
+              </span>
+              <span className="text-[10px] sm:text-[11px] lg:text-[12px] font-semibold tracking-[0.18em] mt-1 leading-none text-[#006241]/80">
+                Cafe &amp; restro
+              </span>
+            </div>
           </button>
 
           {/* Center: Desktop Navigation Links (Home, Menu, About Us, Gallery, Contact) */}
