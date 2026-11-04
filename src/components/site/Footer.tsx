@@ -69,29 +69,18 @@ export function Footer() {
 
   return (
     <footer className="relative z-10 mt-14 sm:mt-20 rounded-t-[28px] sm:rounded-t-[36px] bg-[#1e3932] px-[5%] sm:px-[6%] pt-8 sm:pt-12 pb-7 text-paper overflow-hidden shadow-2xl border-t border-white/10">
-      {/* Top Branding Section: Balanced Logo Emblem + 3PM CAFE Header */}
+      {/* Top Branding Section: Logo only — logo image contains the brand name */}
       <div className="pb-6 sm:pb-8 border-b border-white/15">
         <div className="flex items-center gap-3.5 sm:gap-5">
-          <img
+          <motion.img
             src="/images/logo.png"
-            alt="3PM Cafe Logo Emblem"
-            className="size-12 sm:size-16 rounded-full object-contain bg-white p-1 ring-2 ring-white/20 shadow-xl shrink-0 transition-transform duration-300 hover:scale-105"
+            alt="3PM Cafe Logo"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5 }}
+            className="h-16 sm:h-20 md:h-24 w-auto object-contain bg-white rounded-xl p-2 shadow-xl shrink-0 transition-transform duration-300 hover:scale-105"
           />
-          <div className="flex flex-col">
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
-              className={`${display} flex items-baseline gap-2 sm:gap-3 leading-none text-paper select-none font-bold tracking-tight text-[26px] sm:text-[38px] md:text-[46px]`}
-            >
-              <span>3PM</span>
-              <span className="text-[#d4e9e2]">CAFE</span>
-            </motion.div>
-            <p className="text-[10px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-[#d4e9e2]/85 mt-1 sm:mt-1.5">
-              Coffee · Comfort · Connection
-            </p>
-          </div>
         </div>
       </div>
 
